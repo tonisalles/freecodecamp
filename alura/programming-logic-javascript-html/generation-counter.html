@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function skipLine() {
+		document.write("<br>");
+	}
+
+	function show(phrase) {
+		document.write(phrase);
+		skipLine();
+	}
+
+	var arrivalPort = 1500;
+	var currentAge = 2022;
+
+	var media = (currentAge - arrivalPort)/28;
+
+	show("De 1500 até os dias de hoje, o Brasil teve " + Math.round(media) + " gerações.");
+
+</script>
