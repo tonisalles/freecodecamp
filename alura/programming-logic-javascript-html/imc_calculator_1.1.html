@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function skipLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase) {
+
+		document.write(phrase);
+		skipLine();
+	}
+
+	function imcCalculate(height, weight) {
+
+		return weight / (height * height);
+	}
+
+	var imcTotal = imcCalculate(1.71, 73) + imcCalculate(1.72, 68);
+	
+	document.write("A soma total dos imc's é " + imcTotal);
+
+</script>
