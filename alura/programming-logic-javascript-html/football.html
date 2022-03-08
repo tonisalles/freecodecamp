@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    var wins = parseInt(prompt("Describe the number of wins"));
+    var draws = parseInt(prompt("Describe the number of draws"));
+
+    var points = (wins * 3) + draws;
+
+    mostra("Your score team is: " + points);
+
+</script>
