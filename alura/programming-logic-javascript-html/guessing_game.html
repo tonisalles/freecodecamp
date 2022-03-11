@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+	var numberThink = Math.round(Math.random() * 10);
+	console.log(numberThink);
+
+	var bet = parseInt(prompt("Try to guess a number from 1 to 10"));
+
+	if(bet == numberThink) {
+
+		mostra("So good, you win!");
+	}
+
+	else {
+
+		mostra("You lost, try again! The number thought was " + numberThink);
+	}
+
+</script>
